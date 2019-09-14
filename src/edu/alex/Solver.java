@@ -32,12 +32,15 @@ public class Solver {
         String equationVariableTokens[] = equation.replaceAll("[^a-zA-Z\\d\\s]", " ").replaceAll("  ", " ").split(" ");
 
         // Fill Map with equation variable tokens. Prevents doubles and whitespace.
-        Map<String, String> variables = new HashMap<String, String>();
+        Map<Integer, String> variables = new HashMap<Integer, String>();
+
+        int index = 0;
 
         for (String vToken : equationVariableTokens) {
-            if (!vToken.equals("") && !variables.containsKey(vToken)) {
+            if (!vToken.equals("") && !variables.containsValue(vToken)) {
                 System.out.print(vToken + "\t");
-                variables.put(vToken, vToken);
+                variables.put(index, vToken);
+                index++;
             }
         }
 
@@ -52,7 +55,7 @@ public class Solver {
             // Set index of current binary location.
             int binaryIndex = 0;
             // Fpr each variable in equaiton.
-            for(String variable : variables.keySet()){
+            for(String variable : variables.values()){
                 // Get boolean state from binary representation of step in String.
                 String booleanState = (binary.substring(binaryIndex, binaryIndex + 1).equals("1")) ? "true" : "false";
                 // Replace all occurences of variables in equation.

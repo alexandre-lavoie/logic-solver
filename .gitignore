@@ -1,4 +1,5 @@
 .vscode
 .settings
 .classpath
-bin
+bin/
+*.class
