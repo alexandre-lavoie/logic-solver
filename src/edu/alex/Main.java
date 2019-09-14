@@ -23,6 +23,7 @@ public class Main {
             System.out.print("Equation: ");
             
             String equation = scanner.nextLine();
+            System.out.println();
 
             if(equation.toLowerCase().equals("exit")){
                 scanner.close();

@@ -2,7 +2,24 @@
 This is a boolean logic solver for Java. The solver automatically finds the variables in the proposition. It then generates a truth table with all possible inputs and outputs.
 
 ## Getting Started
-You'll need to have a Java IDE. This project was created and tested with Visual Studio Code. You can then run the main function in the Main class.
+
+### Requirements
+- Java IDE (we use Visual Studio Code)
+- JDK 1.8^
+
+### Note
+You will have to manually change the JDK version in the [.classpath](.classpath) file.
+
+```
+
+...
+
+<classpathentry kind="con" path=".../JavaSE-*version*"/>
+
+...
+
+
+```
 
 ## How to Use
 
