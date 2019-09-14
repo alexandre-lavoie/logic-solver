@@ -24,7 +24,7 @@ Input your equation using non-reserved variable names. Your variable names shoul
 
 Given the propopostion:
 
-![equation](https://latex.codecogs.com/gif.download?%28%5Clnot%20p%20%5Clor%20q%29%20%5Cland%20%28p%20%5Coplus%20r%29%20%5Cleftrightarrow%20%28p%20%5Clor%20q%20%5Clor%20r%29)
+![equation](https://latex.codecogs.com/gif.latex?%28%5Clnot%20p%20%5Clor%20q%29%20%5Cland%20%28p%20%5Coplus%20r%29%20%5Cleftrightarrow%20%28p%20%5Clor%20q%20%5Clor%20r%29)
 
 The proposition can be input and the truth table will be generated:
 
